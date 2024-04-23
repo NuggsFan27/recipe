@@ -255,6 +255,11 @@ nav input:checked ~ ul {
     overflow: visible;
 }
 
+#socials h2 {
+   visibility: hidden;
+}
+
+
 #details, #ingredients, #directions, #socials {
     background-color: #ffffff;
 }
