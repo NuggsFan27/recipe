@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -60,6 +60,7 @@ html {
 body {
     width: 414px;
     margin: 0 auto;
+    background-color: #F2F2F2;
 }
 
 p {
@@ -118,14 +119,16 @@ nav {
 
 ul {
     max-height: 0;
-    overflow: hidden;
-  }
-  input:checked ~ ul {
-    max-height: 500px;
-  }
-  input {
+    overflow: hidden; 
+}
+  
+input:checked ~ ul {
+    max-height: 500px;  
+}
+ 
+#dropdown input {
     display: none;
-  }
+}
 
 input {
     font-family: "Montserrat", sans-serif;
@@ -169,6 +172,11 @@ li a {
     color: #EB5428;
 }
 
+.spacer {
+    width: 100%;
+    height: 90px;
+}
+
 #taco ul {
     display: inline-grid;
     font-family: "Montserrat", sans-serif;
@@ -177,6 +185,7 @@ li a {
     font-style: normal;
     size: 16px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 60px;
 }
 
 nav ul {
@@ -242,11 +251,13 @@ nav input:checked ~ ul {
     list-style: circle;
     overflow: visible;
     max-height: none;
+    padding-left: 20px;
 }
 
 #directions ol {
     list-style-type: decimal;
     line-height: 1.5em;
+    padding-left: 20px;
 }
 
 #socials ul{
@@ -264,6 +275,10 @@ nav input:checked ~ ul {
     background-color: #ffffff;
 }
 
+#details:first-of-type p {
+    font-weight: bold;
+}
+
 #taco p {
     background-color: #ffffff;
 }
@@ -275,6 +290,10 @@ nav input:checked ~ ul {
 #sides div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+#sides div:hover {
+    background-color: #EB5428;
 }
 
 #sides h2 {
@@ -302,6 +321,12 @@ dt {
 
 #search {
     position: fixed;
+    top: 100px;
+    border-color: #EB5428;
+}
+
+#site-search {
+    border-color: #EB5428;
 }
 
 label {
@@ -372,11 +397,12 @@ footer img {
     margin: 0 auto;
     display: block;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 footer p{
     text-align: center;
     bottom: 0;
     position: absolute;
+    left: 125px;
 }
