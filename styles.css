@@ -426,6 +426,10 @@ footer p{
         z-index:5;
     }
 
+    nav ul {
+        grid-column-start: 1 / 2;
+    }
+
     #taco ul {
         display: inline-grid;
         font-family: "Montserrat", sans-serif;
@@ -468,12 +472,30 @@ footer p{
         grid-column: 1 / 3;
     }
 
-    #ingredients, #directions {
+
+    #instructions {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    #ingredients h2{
+        text-align: center;
+    }
+
+    #ingredients {
+        line-height: 1.5em;
+    }
+
+    #directions h2{
+        text-align: center;
     }
 
     #details p {
         text-align: center;
+    }
+
+    h1 {
+        text-align: left;
     }
 
     #socials ul {
@@ -481,10 +503,9 @@ footer p{
         justify-items: end
     }
 
-    svg:first-of-type{
-        grid-template-columns: 1 / 4;
+    footer img {
+        margin: 0;
     }
-
 
 
 
