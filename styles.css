@@ -2,6 +2,9 @@
 v2.0 | 20110126
 License: none (public domain)
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,8 +52,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
     
 html {
@@ -101,7 +102,6 @@ nav {
     background-color: #ffffff;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -130,7 +130,6 @@ input:checked ~ ul {
 
 input {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -540,10 +539,8 @@ footer p{
         }
 
         #details {
-            display: grid;
             background-color: #0D0D0D;
             color: #7ABFBF;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         }
 
         #sides {
