@@ -526,6 +526,10 @@ footer p{
             margin: 0 auto;
         }
 
+        main {
+            width: 1280px;
+        }
+
         nav {
             background-color: #ffffff;
             text-decoration: none;
@@ -549,6 +553,15 @@ footer p{
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         }
 
+        #sides {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        #taco img {
+            width: 75%;
+        }
 
 
 
