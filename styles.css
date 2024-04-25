@@ -66,7 +66,6 @@ body {
 p {
     line-height: 1.5em;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -76,15 +75,13 @@ p {
 
 dd {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    size: 16px;
+    font-size: 16px;
 }
 
 li {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -181,7 +178,6 @@ li a {
 #taco ul {
     display: inline-grid;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -415,7 +411,6 @@ footer p{
         background-color: #ffffff;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
         font-size: 16px;
@@ -430,7 +425,6 @@ footer p{
     #taco ul {
         display: inline-grid;
         font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
         font-size: 16px;
@@ -534,7 +528,6 @@ footer p{
             background-color: #ffffff;
             text-decoration: none;
             font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
             font-size: 16px;
@@ -559,10 +552,20 @@ footer p{
             grid-template-rows: 1fr 1fr;
         }
 
-        #taco img {
-            width: 75%;
+        img {
+            width: 50%;
+            padding-left: 100px;
         }
 
+        #taco ul {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
 
 
 
