@@ -81,6 +81,13 @@ dd {
     font-size: 16px;
 }
 
+dt {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+}
+
 li {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -141,6 +148,8 @@ h1 {
     font-style: normal;
     font-size: 40px;
     text-align: center;
+    padding: 30px;
+    margin-top: 50px;
 }
 
 h2 {
@@ -169,12 +178,7 @@ li a {
     color: #EB5428;
 }
 
-.spacer {
-    width: 100%;
-    height: 90px;
-}
-
-#taco ul {
+menu {
     display: inline-grid;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -275,7 +279,7 @@ nav input:checked ~ ul {
     font-weight: bold;
 }
 
-#taco p {
+#main p {
     background-color: #ffffff;
 }
 
@@ -421,7 +425,7 @@ footer p{
         grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     }
 
-    #taco ul {
+    menu {
         display: inline-grid;
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
@@ -483,7 +487,7 @@ footer p{
         text-align: center;
     }
 
-    #details p {
+    #details{
         text-align: center;
     }
 
@@ -502,14 +506,10 @@ footer p{
     }
 
     #search {
-        right: 500px;
         top: 2px;
         z-index: 6;
-    }
-
-    .spacer {
-        width: 100%;
-        height: 70px;
+        right: 50px;
+        bottom: -1px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -517,6 +517,10 @@ footer p{
         body {
             width: 1280px;
             margin: 0 auto;
+        }
+
+        #dropdown {
+            display: hidden;
         }
 
         main {
@@ -541,30 +545,55 @@ footer p{
         #details {
             background-color: #0D0D0D;
             color: #7ABFBF;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
 
-        #sides {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+        #sides div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
         }
 
         img {
             width: 50%;
             padding-left: 100px;
+            height: 100%;
+            top: 200px;
+            right: 300px;
         }
 
-        #taco ul {
-            display: grid;
+        menu {
+            display: flex;
+            flex-direction: column;
             grid-template-columns: 1fr;
             gap: 40px;
+            width: 25%;
+        }
+
+        label {
+            display: none;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
         }
 
         h1 {
             text-align: center;
         }
 
+        #search {
+            bottom: 100px;
+        }
 
+        footer img {
+            margin-left: 0;
+        }
+        
+        footer p {
+            text-align: center;
+        }
 
     }
 }
