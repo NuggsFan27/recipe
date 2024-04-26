@@ -453,7 +453,8 @@ footer p{
 
     nav ul {
         max-height: 0;
-        overflow: hidden; 
+        overflow: visible;
+        display: flex; 
     }
 
     #sides {
@@ -520,7 +521,7 @@ footer p{
         }
 
         #dropdown {
-            display: hidden;
+            display: none;
         }
 
         main {
@@ -577,6 +578,7 @@ footer p{
         nav ul {
             display: flex;
             flex-direction: row;
+            overflow: visible;
         }
 
         h1 {
