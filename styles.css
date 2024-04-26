@@ -453,7 +453,7 @@ footer p{
 
     nav ul {
         max-height: 0;
-        overflow: visible; 
+        overflow: hidden; 
     }
 
     #sides {
